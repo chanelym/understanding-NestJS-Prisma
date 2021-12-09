@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { PrismaModule } from '../../src/plugins/prisma/prisma.module';
+import { PrismaModule } from '../plugins/prisma/prisma.module';
 import { MoviesController } from './movies/movies.controller';
 import { GenreController } from './genre/genre.controller';
 import { ParticipantController } from './participant/participant.controller';
