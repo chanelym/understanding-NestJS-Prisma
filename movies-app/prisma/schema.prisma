@@ -18,8 +18,8 @@ model Movie {
   duration        String
   genre           Genre @relation(fields: [genreid], references:[id])
   genreid         Int
-  participant     Participant @relation(fields: [participantid], references:[id])
-  participantid   Int
+  participant     Participant? @relation(fields: [participantid], references:[id])
+  participantid   Int?
 }
 
 model Genre {
