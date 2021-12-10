@@ -14,7 +14,7 @@ model Movie {
   id              Int @default(autoincrement()) @id
   name            String
   image           String
-  release_date    DateTime
+  release    String
   duration        String
   genre           Genre @relation(fields: [genreid], references:[id])
   genreid         Int
@@ -32,7 +32,7 @@ model Participant {
   id          Int @default(autoincrement()) @id
   name        String
   image       String
-  birth_date  DateTime
+  birthday  String
   staff       String
   movie       Movie[]
 }

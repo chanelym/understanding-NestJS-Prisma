@@ -13,7 +13,7 @@ export class CreateMovieDto {
 
   @IsNotEmpty()
   @IsString()
-  release_date: string;
+  release: string;
 
   @IsString()
   @IsNotEmpty()

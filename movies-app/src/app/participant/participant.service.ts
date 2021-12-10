@@ -9,10 +9,10 @@ export class ParticipantService {
   constructor(private prisma: PrismaService) {}
 
   async create(
-    createParticipanteDto: CreateParticipantDto,
+    createParticipantDto: CreateParticipantDto,
   ): Promise<Participant> {
     return await this.prisma.participant.create({
-      data: { ...createParticipanteDto },
+      data: { ...createParticipantDto },
     });
   }
 
@@ -26,10 +26,10 @@ export class ParticipantService {
 
   async update(
     id: number,
-    UpdateParticipanteDto: UpdateParticipantDto,
+    updateParticipantDto: UpdateParticipantDto,
   ): Promise<Participant> {
     return await this.prisma.participant.update({
-      data: { ...UpdateParticipanteDto },
+      data: { ...updateParticipantDto },
       where: { id },
     });
   }

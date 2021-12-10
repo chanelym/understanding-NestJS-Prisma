@@ -13,7 +13,7 @@ export class CreateParticipantDto {
 
   @IsNotEmpty()
   @IsString()
-  birth_date: string;
+  birthday: string;
 
   @IsString()
   @IsNotEmpty()
